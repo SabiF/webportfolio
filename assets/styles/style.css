@@ -1,0 +1,324 @@
+/* === General Styling === */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+}
+
+a {
+  color: #DD7373;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #37b3ed;
+  text-decoration: none;
+}
+
+section {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Raleway", sans-serif;
+}
+
+
+/* === Navbar === */
+.navbar {
+  background-color: #3d3c63;
+}
+
+.offcanvas-header {
+  background-color: #3d3c63;
+}
+
+.offcanvas-title {
+  color: #ffffff;
+}
+.offcanvas-body .navbar-nav .nav-link {
+  color: #3d3c63;
+}
+
+.navbar-toggler, .btn-close {
+  color: #ffffff; 
+  border: none;
+}
+
+.navbar-toggler:hover, .btn-close:hover {
+  outline-width: 1px;
+}
+
+/* === Carousel Container === */
+.carousel-container {
+  position: relative;
+  background: #3d3c63;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='700' preserveAspectRatio='none' viewBox='0 0 1440 700'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1074%26quot%3b)' fill='none'%3e%3crect width='1440' height='700' x='0' y='0' fill='rgba(61%2c 60%2c 99%2c 1)'%3e%3c/rect%3e%3cpath d='M783.48 331.57 a145.57 145.57 0 1 0 291.14 0 a145.57 145.57 0 1 0 -291.14 0z' fill='rgba(221%2c 115%2c 115%2c 0.65)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-184.16 557.4 a214.56 214.56 0 1 0 429.12 0 a214.56 214.56 0 1 0 -429.12 0z' fill='rgba(221%2c 115%2c 115%2c 0.65)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1331.631%2c506.566C1386.498%2c508.136%2c1436.977%2c472.819%2c1460.788%2c423.364C1482.085%2c379.131%2c1463.421%2c329.327%2c1436.836%2c288.055C1412.89%2c250.881%2c1375.85%2c222.731%2c1331.631%2c222.856C1287.611%2c222.981%2c1250.229%2c250.978%2c1227.455%2c288.649C1203.74%2c327.878%2c1194.905%2c374.963%2c1214.676%2c416.32C1237.439%2c463.937%2c1278.875%2c505.056%2c1331.631%2c506.566' fill='rgba(221%2c 115%2c 115%2c 0.65)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M580.62 577.85 a119.92 119.92 0 1 0 239.84 0 a119.92 119.92 0 1 0 -239.84 0z' fill='rgba(221%2c 115%2c 115%2c 0.65)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M528.24 437.75 a210.15 210.15 0 1 0 420.3 0 a210.15 210.15 0 1 0 -420.3 0z' fill='rgba(221%2c 115%2c 115%2c 0.65)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1065.09 621.33 a131.75 131.75 0 1 0 263.5 0 a131.75 131.75 0 1 0 -263.5 0z' fill='rgba(221%2c 115%2c 115%2c 0.65)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M903.78 84.64 a170.25 170.25 0 1 0 340.5 0 a170.25 170.25 0 1 0 -340.5 0z' fill='rgba(221%2c 115%2c 115%2c 0.65)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M455.116%2c423.396C517.216%2c422.636%2c576.266%2c392.303%2c606.585%2c338.101C636.248%2c285.071%2c630.54%2c219.461%2c597.835%2c168.252C567.49%2c120.738%2c511.489%2c100.233%2c455.116%2c100.931C400.116%2c101.612%2c348.559%2c125.719%2c318.394%2c171.714C284.792%2c222.95%2c267.839%2c288.048%2c297.087%2c341.889C327.411%2c397.71%2c391.595%2c424.173%2c455.116%2c423.396' fill='rgba(221%2c 115%2c 115%2c 0.65)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1074'%3e%3crect width='1440' height='700' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  width: auto;
+  min-height: 700px;
+}
+
+/* Fixed Text on Top of Images */
+.carousel-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #F3F4F2;
+  text-align: center;
+  font-weight: bold;
+}
+
+.carousel-text h3 {
+  font-size: 4.vw;
+}
+
+.carousel-text p {
+  font-size: 2vw;
+}
+
+.carousel-item img {
+  padding-top: 50px;
+  width: 100%; 
+  height: auto;
+}
+
+.carousel-inner .carousel-item {
+  opacity: 0;
+  transition: opacity .5s;
+  transition-delay: 2s;
+}
+
+.carousel-inner .carousel-item.active {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+/* Media query for medium screens (adjust as needed) */
+@media (min-width: 768px) {
+  .carousel-text h3, .carousel-text p {
+    white-space: normal;
+  }
+}
+
+/* Skills Section */
+
+#skills {
+  background: #3d3c63;
+  background-size: 400% 400%;
+  color: white;
+}
+#skills h2 {
+  font-weight: Bold;
+  font-family: 'Open Sans', sans-serif;
+  color: #e0c860;
+}
+
+#skills .btn {
+  background-color: #a793e9;
+}
+
+#skills .btn:hover {
+  background-color: #e993e0;
+}
+
+/* Tools Section */
+#tools {
+  background:#3d3c63;
+}
+
+#tools h5 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #e4a8a9;
+}
+
+#tools img {
+  max-width: 30px;
+  height: auto;
+}
+
+#tools p {
+  padding-left: 1rem;
+  color: #e0c860;
+}
+
+/* projects Section */
+
+#projects {
+  background-color:#3d3c63;
+  background-size: 400% 400%;
+    padding-top: 5rem;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+#projects h1 {
+  padding-bottom: 1rem;
+  font-weight: bold;
+  color: #e0c860;
+}
+
+#projects .card {
+  background: rgba(255,237,158,0.75);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,237,158,0.375);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 520px;
+  border-radius: 30px;
+  margin: 1rem;
+  position: relative;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  transform-origin: center;
+}
+
+#portfolio img {
+  padding: 1rem;
+}
+
+.card p {
+  color: black ;
+}
+
+.card h2 {
+  color:#000000 ;
+  padding-top: 1 rem;
+}
+
+.card-flip {
+  transform: rotateY(180deg); /* Flip the card on the Y-axis */
+}
+
+
+.card:hover {
+  transform: rotateY(180deg); /* Flip the card on hover */
+}
+
+.card-inner.front {
+  transform: rotateY(0deg); /* Initially not flipped */
+}
+
+/* Styling for the back side of the card */
+.card-inner.back {
+  display: none; /* Initially flipped to the back */
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-inner.front {
+  transform: rotateY(-180deg);
+  display: none;
+}
+
+.card:hover .card-inner.back {
+  transform: rotateY(0deg);
+  display: block;
+}
+
+.card .back-content {
+  transform: rotateY(-180deg);
+}
+
+#Card-SM {
+  padding-top: 10px;
+}
+
+/* Contact */
+#contact {
+  background: #343540;
+}
+
+.form img {
+  padding: 1rem;
+}
+
+.form-group {
+  padding-bottom: 15px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 10px;
+}
+
+.social-icon:hover {
+  background-color: #f0f0f0;
+  color: #a793e9;
+}
+
+/* Facebook Icon */
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Instagram Icon */
+.instagram {
+  background: #125688;
+  color: white;
+}
+
+/* Twitter Icon */
+.twitter {
+  background: #007bb5;
+  color: white;
+}
+
+/* Email Icon */
+.email {
+  background: #dd4b39;
+  color: white;
+}
+
+#contact .btn {
+  background-color: #e0c860;
+}
+
+#contact .btn:hover {
+  background-color: #dd7373;
+}
+
+@media (max-width: 767px) {
+  .social-icon {
+      font-size: 24px;
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+  }
+}

@@ -2,362 +2,379 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- Mobile Responsive Meta Tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IJF Projects</title>
 
-    <!-- CSS Links (Bootstrap 4.6 CSS Link & CSS file) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>IJF | Web Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link href="./assets/styles/style.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Spartan:wght@100;600&family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Icon Library -->
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
 <body>
-    <!-- NavBar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#landing">
-            <img src="./images/IJF logo.png" alt="Logo" class="logo-img mr-2"> IJF
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#landing">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#tools">Tools</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
+<!-- NAV BAR-->
+<nav class="navbar navbar-dark fixed-top">
+  <div class="container-fluid">
+      <div class="row w-100">
+          <div class="col text-start">
+              <a class="navbar-brand" href="#">IJF</a>
+          </div>
+          <div class="col text-end">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+      </div>
+  </div>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+      <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tools">Tools</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
+      </div>
+  </div>
+</nav>
+<!-- END NAV BAR-->
+
+<!-- HERO SECTION -->
+  <!-- Carousel -->
+  <div class="carousel-container">
+    <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <!-- Carousel Indicators -->
+        <div class="carousel-inner">
+          <div class="carousel-caption carousel-text">
+            <h3>Isabelle J. Fernan</h3>
+            <p>Web Developer | Commentator</p>
         </div>
-      </nav>
-
-      <!-- Landing Section -->
-    <section id="landing">
-        <div class="jumbotron p-md-5 p-md-5 text-white rounded">
-          <div class="row align-items-md-center">
-              <div class="col-md-6 px-0 d-flex justify-content-center align-items-center">
-                  <img class="rounded-circle img-fluid mx-auto" src="./images/IJFprofile.png">
-              </div>
-              <div class="col-md-6 px-0 py-5 d-md-none">
-                  <!-- Center the text only on small devices -->
-                  <div class="text-center">
-                      <h1 class="font-weight-bold">Isabelle J Fernan</h1>
-                      <h2>Full Stack Web Developer</h2>
-                      <p class="lead my-3">A skilled Full Stack Web Developer passionate about creating seamless web experiences that blend creativity and functionality. With expertise in both front-end and back-end technologies, I bring ideas to life by crafting user-centric applications.</p>
-                  </div>
-              </div>
-              <div class="col-md-6 px-0 py-5 d-none d-md-block">
-                  <!-- For medium and large devices -->
-                  <h1 class="font-weight-bold">Isabelle J Fernan</h1>
-                  <h2>Full Stack Web Developer</h2>
-                  <p class="lead my-3">A skilled Full Stack Web Developer passionate about creating seamless web experiences that blend creativity and functionality. With expertise in both front-end and back-end technologies, I bring ideas to life by crafting user-centric applications.</p>
-              </div>
-          </div>
-        </div>        
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="row p-5">
-          <div class="col-md-4">
-            <h2>Front-End Development</h2>
-            <p>Explore my collection of front-end projects showcasing captivating user interfaces and seamless interactions. From responsive designs to engaging animations, these projects highlight my dedication to creating visually appealing and user-friendly web experiences.</p>
-            <p><a class="btn d-md-none" href="#front-end-tools" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Back-End Development</h2>
-            <p>Dive into my backend projects, where I've built robust APIs and implemented server-side functionalities. These projects demonstrate my expertise in designing efficient databases, handling data securely, and creating the backbone of dynamic web applications.</p>
-            <p><a class="btn d-md-none" href="#back-end-tools" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Full-Stack Development</h2>
-            <p>Discover the synergy of my full stack projects, which seamlessly blend front-end elegance with back-end functionality. These projects showcase my ability to create end-to-end solutions, providing users with comprehensive and engaging experiences across all layers of web development.</p>
-            <p><a class="btn d-md-none" href="#full-stack-tools" role="button">View details &raquo;</a></p>
-          </div>
+          <div class="carousel-item active">
+            <img src="./assets/images/t1.png" alt="Image 1">
         </div>
-    </section>
-
-    <!-- Tools Section -->
-    <section id="tools">
-        <!-- Tools content here -->
-        <div class="row p-5">
-          <div class="col-md-4">
-            <div class="w-100 d-flex">
-              <div class="text p-4">
-                <h5 id="front-end-tools">Front-End Development Tools</h5>
-                <div class="d-flex flex-column">
-                  <div class="d-flex">
-                    <img src="./images/tools/logo-git.png" alt="Git Logo">
-                    <p>Git</p>
-                  </div>
-                  <div class="d-flex">
-                    <img src="./images/tools/logo-gitlab-ci-cd.png" alt="Git Lab Logo">
-                    <p>Git Lab</p>
-                  </div>
-                  <div class="d-flex">
-                    <img src="./images/tools/chrome-devtools.svg" alt="Chrome Developer Tools Logo">
-                    <p class="tool-name">Chrome Developer Tools</p>
-                </div>                
-                  <div class="d-flex">
-                    <img src="./images/tools/logo-html5.png" alt="HTML Logo">
-                    <p>HTML</p>
-                  </div>
-                  <div class="d-flex">
-                    <img src="./images/tools/logo-css3.png" alt="CSS Logo">
-                    <p>CSS</p>
-                  </div>
-                  <div class="d-flex">
-                    <img src="./images/tools/logo-bootstrap.png" alt="Bootstrap Logo">
-                    <p>Bootstrap</p>
-                  </div>
-                </div>
-              </div>
+        <div class="carousel-item">
+            <img src="./assets/images/t3.png" alt="Image 3">
+        </div>
+        </div>
+    </div>
+</div>
+<!-- END HERO SECTION -->
+<!-- SKILLS SECTION -->
+<section id="skills">
+  <div class="row m-4">
+    <div class="col-md-4">
+      <h2>Front-End Development</h2>
+      <p>Explore my collection of front-end projects showcasing captivating user interfaces and seamless interactions. From responsive designs to engaging animations, these projects highlight my dedication to creating visually appealing and user-friendly web experiences.</p>
+      <p><a class="btn d-md-none" href="#front-end-tools" role="button">View details &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+      <h2>Back-End Development</h2>
+      <p>Dive into my backend projects, where I've built robust APIs and implemented server-side functionalities. These projects demonstrate my expertise in designing efficient databases, handling data securely, and creating the backbone of dynamic web applications.</p>
+      <p><a class="btn d-md-none" href="#back-end-tools" role="button">View details &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+      <h2>Full-Stack Development</h2>
+      <p>Discover the synergy of my full stack projects, which seamlessly blend front-end elegance with back-end functionality. These projects showcase my ability to create end-to-end solutions, providing users with comprehensive and engaging experiences across all layers of web development.</p>
+      <p><a class="btn d-md-none" href="#full-stack-tools" role="button">View details &raquo;</a></p>
+    </div>
+  </div>
+</section>
+<!-- END SKILLS SECTION -->
+<!-- TOOLS SECTION -->
+<section id="tools">
+  <!-- Tools content here -->
+  <div class="row m-3">
+    <div class="col-md-4">
+      <div class="w-100 d-flex">
+        <div class="text p-4">
+          <h5 id="front-end-tools">Front-End Development Tools</h5>
+          <div class="d-flex flex-column">
+            <div class="d-flex">
+              <img src="./assets/images/tools/logo-git.png" alt="Git Logo">
+              <p>Git</p>
+            </div>
+            <div class="d-flex">
+              <img src="./assets/images/tools/logo-gitlab-ci-cd.png" alt="Git Lab Logo">
+              <p>Git Lab</p>
+            </div>
+            <div class="d-flex">
+              <img src="./assets/images/tools/chrome-devtools.svg" alt="Chrome Developer Tools Logo">
+              <p class="tool-name">Chrome Developer Tools</p>
+          </div>                
+            <div class="d-flex">
+              <img src="./assets/images/tools/logo-html5.png" alt="HTML Logo">
+              <p>HTML</p>
+            </div>
+            <div class="d-flex">
+              <img src="./assets/images/tools/logo-css3.png" alt="CSS Logo">
+              <p>CSS</p>
+            </div>
+            <div class="d-flex">
+              <img src="./assets/images/tools/logo-bootstrap.png" alt="Bootstrap Logo">
+              <p>Bootstrap</p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="w-100 d-flex">
-              <div class="text p-4">
-                <h5 id="back-end-tools">Back-End Development Tools</h5>
-                <div class="d-flex flex-column">
-                  <div class="d-flex">
-                    <img src="./images/tools/logo-javascript.png" alt="Javascript Logo">
-                    <p>Javascript</p>
-                  </div>
-                  <div class="d-flex">
-                    <img src="./images/tools/logo-nodejs.png" alt="Node.js Logo">
-                    <p>Node.js</p>
-                  </div>
-                  <div class="d-flex">
-                    <img src="./images/tools/logo-rest.png" alt="REST Architecture Logo">
-                    <p>REST Architecture</p>
-                  </div>
-                  <div class="d-flex">
-                    <img src="./images/tools/logo-expressjs.png" alt="Express.js Logo">
-                    <p>Express.js</p>
-                  </div>
-                  <div class="d-flex">
-                    <img src="./images/tools/logo-postman.png" alt="Postman Logo">
-                    <p>Postman</p>
-                  </div>
-                  <div class="d-flex">
-                    <img src="./images/tools/logo-heroku.png" alt="Heroku Logo">
-                    <p>Heroku</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="w-100 d-flex">
-              <div class="text p-4">
-                <h5 id="full-stack-tools">Full-Stack Development Tools</h5>
-                <div class="d-flex flex-column">
-                  <div class="d-flex">
-                    <img src="./images/tools/logo-mongodb.png" alt="MongoDB Logo">
-                    <p>MongoDB</p>
-                  </div>
-                  <div class="d-flex">
-                    <img src="./images/tools/logo-expressjs.png" alt="Express.js Logo">
-                    <p>Express.js</p>
-                  </div>
-                  <div class="d-flex">
-                    <img src="./images/tools/logo-react.png" alt="React Logo">
-                    <p>React</p>
-                  </div>
-                  <div class="d-flex">
-                    <img src="./images/tools/logo-nodejs.png" alt="Node.js Logo">
-                    <p>Node.js</p>
-                  </div>
-              </div>
-             </div>
-            </div>
-          </div>
-    </section>
-
-    <!-- projects Section -->
-    <section id="projects">
-      <div class="container p-1">
-        <h1>Projects</h1>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-
-          <div class="col p-2">
-            <div class="card-wrapper">
-              <div class="card p-3">
-                <img src="images/undraw_Add_to_cart_re_wrdo.png" alt="Image" class="img-fluid">
-                <h2 class="heading mb-3">E-Commerce</h2>
-                <p>E-Commerce, or electronic commerce, refers to the buying and selling of goods and services over the internet. It enables businesses to reach a global customer base, offering convenience and accessibility for online shoppers.</p>
-              </div>
-              </div>
-            </div>
-
-          
-          <div class="col p-2">
-            <div class="card-wrapper">
-              <div class="card p-3">
-              <div class="post-entry d-block small-post-entry-v">
-                <img src="images/undraw_Personal_website_re_c8dv.png" alt="Image" class="img-fluid">
-              </div>
-              <div class="content p-3">
-                <h2 class="heading mb-3">Portfolio</h2>
-                <p>Websites used by individuals, artists, photographers, or professionals to showcase their work, projects, achievements, and skills to potential clients or employers. </p>
-              </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col p-2">
-            <div class="card-wrapper">
-              <div class="card">
-                <div class="post-entry d-block small-post-entry-v">
-                  <img src="images/undraw_Blogging_re_kl0d.png" alt="Image" class="img-fluid">
-                </div>
-                <div class="content p-3">
-                  <h2 class="heading mb-3">Blog</h2>
-                  <p>Online platforms where individuals or organizations regularly publish articles, posts, and content on various topics, sharing insights, opinions, information, and engaging with readers. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col p-2">
-            <div class="card-wrapper">
-              <div class="card">
-                <div class="post-entry d-block small-post-entry-v">
-                  <img src="images/undraw_Success_factors_re_ce93.png" alt="Image" class="img-fluid">
-                </div>
-                <div class="content p-3">
-                  <h2 class="heading mb-3">Corporate</h2>
-                  <p>Official websites of businesses or corporations that provide information about their products, services, history, mission, team, and contact details, aiming to establish an online presence and connect with clients and partners.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col p-2">
-            <div class="card-wrapper">
-              <div class="card">
-                <div class="post-entry d-block small-post-entry-v">
-                  <img src="images/undraw_Social_influencer_re_beim.png" alt="Image" class="img-fluid">
-                </div>
-                <div class="content p-3">
-                  <h2 class="heading mb-3">Social Networking</h2>
-                  <p>Platforms that enable users to create profiles, connect with friends, share content, and engage in online interactions, fostering communication, networking, and community-building.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col p-2">
-            <div class="card-wrapper">
-              <div class="card">
-                <div class="post-entry d-block small-post-entry-v">
-                  <img src="images/undraw_education_f8ru.png" alt="Image" class="img-fluid">
-                </div>
-                <div class="content p-3">
-                  <h2 class="heading mb-3">Educational</h2>
-                  <p>Online resources offering educational content, courses, tutorials, and resources for learners of all levels, catering to self-paced learning and expanding access to education.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
-    </section>
-    
-    <!-- Contact Section -->
-    <section id="contact" class="container-fluid p-5 text-white d-flex justify-content-center align-items-center">
-      <div class="row text-center">
-          <div class="col-md-12">
-              <h2 class="p-2">Contact Me</h2>
-          </div>
-          
-          <div class="social-icons col-md-12">
-              <a href="https://www.facebook.com/SabiFernan/" target="_blank" class="social-icon facebook">
-                  <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="https://www.instagram.com/sabi_fernan/" target="_blank" class="social-icon instagram">
-                  <i class="fab fa-instagram"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/isabelle-fernan-102b351a6/" target="_blank" class="social-icon linkedin">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="mailto:your@email.com" class="social-icon email">
-                  <i class="fas fa-envelope"></i>
-              </a>
-          </div>
-          
-          <div class="col-md-6 mx-auto text-center">
-              <form class="pt-2 pr-2 pl-2 " id="form-col">
-
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Name</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Full Name" required autocomplete="name">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlInput2">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com" required autocomplete="email">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlInput3">Contact Number</label>
-                <input type="tel" class="form-control" id="exampleFormControlInput3" placeholder="0000-000-0000" required autocomplete="tel">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlTextarea1">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" required></textarea>
+    </div>
+    <div class="col-md-4">
+      <div class="w-100 d-flex">
+        <div class="text p-4">
+          <h5 id="back-end-tools">Back-End Development Tools</h5>
+          <div class="d-flex flex-column">
+            <div class="d-flex">
+              <img src="./assets/images/tools/logo-javascript.png" alt="Javascript Logo">
+              <p>Javascript</p>
             </div>
-            <button type="button" class="btn" data-toggle="modal" data-target="#formModal">
-                Send Message
-            </button>
-            </form>
+            <div class="d-flex">
+              <img src="./assets/images/tools/logo-nodejs.png" alt="Node.js Logo">
+              <p>Node.js</p>
+            </div>
+            <div class="d-flex">
+              <img src="./assets/images/tools/logo-rest.png" alt="REST Architecture Logo">
+              <p>REST Architecture</p>
+            </div>
+            <div class="d-flex">
+              <img src="./assets/images/tools/logo-expressjs.png" alt="Express.js Logo">
+              <p>Express.js</p>
+            </div>
+            <div class="d-flex">
+              <img src="./assets/images/tools/logo-postman.png" alt="Postman Logo">
+              <p>Postman</p>
+            </div>
+            <div class="d-flex">
+              <img src="./assets/images/tools/logo-heroku.png" alt="Heroku Logo">
+              <p>Heroku</p>
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="w-100 d-flex">
+        <div class="text p-4">
+          <h5 id="full-stack-tools">Full-Stack Development Tools</h5>
+          <div class="d-flex flex-column">
+            <div class="d-flex">
+              <img src="./assets/images/tools/logo-mongodb.png" alt="MongoDB Logo">
+              <p>MongoDB</p>
+            </div>
+            <div class="d-flex">
+              <img src="./assets/images/tools/logo-expressjs.png" alt="Express.js Logo">
+              <p>Express.js</p>
+            </div>
+            <div class="d-flex">
+              <img src="./assets/images/tools/logo-react.png" alt="React Logo">
+              <p>React</p>
+            </div>
+            <div class="d-flex">
+              <img src="./assets/images/tools/logo-nodejs.png" alt="Node.js Logo">
+              <p>Node.js</p>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+</section>
+<!-- END TOOLS SECTION -->
+
+<!-- PROJECTS SECTION -->
+<section id="projects">
+  <div class="container m-1">
+    <h1>Projects</h1>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
+
+      <div class="col p-2">
+        <div class="card-wrapper">
+          <div class="card p-3">
+            <div class="card-inner front">
+              <img src="assets/images/Undrawn (portfolio)/undraw_Add_to_cart_re_wrdo.png" alt="Image" class="img-fluid">
+              <h2 class="heading mb-3">E-Commerce</h2>
+              <p>E-Commerce, or electronic commerce, refers to the buying and selling of goods and services over the internet. It enables businesses to reach a global customer base, offering convenience and accessibility for online shoppers.</p>
+              </div>
+              <div class="card-inner back">
+                <div class="back-content">
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col p-2">
+        <div class="card-wrapper">
+          <div class="card p-3">
+            <div class="card-inner front">
+            <img src="assets/images/Undrawn (portfolio)/undraw_Personal_website_re_c8dv.png" alt="Image" class="img-fluid">
+            <h2 class="heading mb-3">Portfolio</h2>
+            <p>Websites used by individuals, artists, photographers, or professionals to showcase their work, projects, achievements, and skills to potential clients or employers. </p>
+          </div>
+          <div class="card-inner back">
+            <div class="back-content">
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      <div class="col p-2">
+        <div class="card-wrapper">
+          <div class="card p-3">
+            <div class="card-inner front">
+              <img src="assets/images/Undrawn (portfolio)/undraw_Blogging_re_kl0d.png" alt="Image" class="img-fluid">
+              <h2 class="heading mb-3">Blog</h2>
+              <p>Online platforms where individuals or organizations regularly publish articles, posts, and content on various topics, sharing insights, opinions, information, and engaging with readers. </p>
+            </div>
+            <div class="card-inner back">
+              <div class="back-content">
+              </div>
+          </div>
+        </div>
       </div>
     </div>
 
-      <!-- modal dialog box start -->
-        <div class="modal fade text-dark" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="formModalLabel">Thank You For Contacting Me!</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                Message Successfully Sent.
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn" data-dismiss="modal">Close</button>
-              </div>
+      <div class="col p-2">
+        <div class="card-wrapper">
+          <div class="card p-3">
+            <div class="card-inner front">
+              <img src="assets/images/Undrawn (portfolio)/undraw_Success_factors_re_ce93.png" alt="Image" class="img-fluid">
+              <h2 class="heading mb-3">Corporate</h2>
+              <p>Official websites of businesses or corporations that provide information about their products, services, history, mission, team, and contact details, aiming to establish an online presence and connect with clients and partners.</p>
             </div>
+            <div class="card-inner back">
+              <div class="back-content">
+              </div>
           </div>
         </div>
-    </section>
-    
+      </div>
+    </div>
 
-     <!-- Bootstrap Script -->
-     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+      <div class="col p-2">
+        <div class="card-wrapper">
+          <div class="card p-3">
+            <div class="card-inner front">
+              <img src="assets/images/Undrawn (portfolio)/undraw_Social_influencer_re_beim.png" alt="Image" class="img-fluid">
+              <h2 class="heading mb-3">Social Networking</h2>
+              <p>Platforms that enable users to create profiles, connect with friends, share content, and engage in online interactions, fostering communication, networking, and community-building.</p>
+            </div>
+            <div class="card-inner back">
+              <div class="back-content">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="col p-2">
+        <div class="card-wrapper">
+          <div class="card p-3">
+            <div class="card-inner front">
+              <img src="assets/images/Undrawn (portfolio)/undraw_education_f8ru.png" alt="Image" class="img-fluid">
+              <h2 class="heading mb-3">Educational</h2>
+              <p>Online resources offering educational content, courses, tutorials, and resources for learners of all levels, catering to self-paced learning and expanding access to education.</p>
+            </div>
+            <div class="card-inner back">
+              <div class="back-content">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container-fluid p-5 text-white d-flex justify-content-center align-items-center">
+  <div class="row text-center">
+      <div class="col-md-12">
+          <h2 class="p-2">Contact Me</h2>
+      </div>
+      
+      <div class="social-icons col-md-12">
+          <a href="https://www.facebook.com/SabiFernan/" target="_blank" class="social-icon facebook">
+              <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/sabi_fernan/" target="_blank" class="social-icon instagram">
+              <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/isabelle-fernan-102b351a6/" target="_blank" class="social-icon linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:your@email.com" class="social-icon email">
+              <i class="fas fa-envelope"></i>
+          </a>
+      </div>
+      
+      <div class="col-md-6 mx-auto text-center" id="form">
+          <form class="pt-2 pr-2 pl-2 " id="form-col">
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Full Name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput2">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput3">Contact Number</label>
+            <input type="tel" class="form-control" id="exampleFormControlInput3" placeholder="0000-000-0000" required autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" required></textarea>
+        </div>
+        <button type="button" class="btn" data-toggle="modal" data-target="#formModal">
+            Send Message
+        </button>
+        </form>
+      </div>
+  </div>
+</div>
+
+  <!-- modal dialog box start -->
+    <div class="modal fade text-dark" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="formModalLabel">Thank You For Contacting Me!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Message Successfully Sent.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
 </body>
 </html>
